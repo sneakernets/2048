@@ -17,6 +17,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <cstring.h>
 #include <unistd.h>
 
 #include "board.h"
