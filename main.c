@@ -16,8 +16,15 @@
  */
 
 #include <stdlib.h>
-#include <string.h>
-#include <cstring.h>
+#ifdef HAVE_CSTRING
+# include <cstring>
+#else
+# ifdef HAVE_STRING_H
+#  include <string.h>
+# else
+#  error "don't have header file for string"
+# endif
+#endif
 #include <unistd.h>
 
 #include "board.h"
