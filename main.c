@@ -59,13 +59,13 @@ int main(int argc, char* argv[]) {
 			break;
 		}
 		input[strlen(input) - 1] = 0;
-		if (!strcmp(input, "u") || !strcmp(input, "up")) {
+		if (!strcmp(input, "w") || !strcmp(input, "up")) {
 			valid = board_move_up(&board);
-		} else if (!strcmp(input, "d") || !strcmp(input, "down")) {
+		} else if (!strcmp(input, "s") || !strcmp(input, "down")) {
 			valid = board_move_down(&board);
-		} else if (!strcmp(input, "l") || !strcmp(input, "left")) {
+		} else if (!strcmp(input, "a") || !strcmp(input, "left")) {
 			valid = board_move_left(&board);
-		} else if (!strcmp(input, "r") || !strcmp(input, "right")) {
+		} else if (!strcmp(input, "d") || !strcmp(input, "right")) {
 			valid = board_move_right(&board);
 		} else {
 			printf("Don't understand input: %s.\n", input);
